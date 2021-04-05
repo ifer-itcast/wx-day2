@@ -1,21 +1,3 @@
-.swiper-container {
-  height: 150px;
-}
-
-.item {
-  height: 100%;
-  line-height: 150px;
-  text-align: center;
-}
-
-swiper-item:nth-child(1) .item {
-  background-color: lightcoral;
-}
-
-swiper-item:nth-child(2) .item {
-  background-color: lightseagreen;
-}
-
-swiper-item:nth-child(3) .item {
-  background-color: lightpink;
+image {
+  border: 1px solid #333;
 }

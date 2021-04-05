@@ -1,15 +1,10 @@
-<!-- 轮播图的结构 -->
-<swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="gray" autoplay interval="2000" circular>
-  <!-- 第一个轮播图 -->
-  <swiper-item>
-    <view class="item">A</view>
-  </swiper-item>
-  <!-- 第一个轮播图 -->
-  <swiper-item>
-    <view class="item">B</view>
-  </swiper-item>
-  <!-- 第一个轮播图 -->
-  <swiper-item>
-    <view class="item">C</view>
-  </swiper-item>
-</swiper>
+<view>
+  <!-- selectable is deprecated, use user-select instead -->
+  <text selectable>hello world</text>
+
+  <rich-text nodes="<h1 class='my-h1' style='color: red;'>Hello World</h1>"></rich-text>
+
+  <button open-type="share">分享</button>
+  <!-- 保持比例可能会发生截取 -->
+  <image src="/images/xxx.jpg" mode="heightFix"></image>
+</view>
