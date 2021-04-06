@@ -1,3 +1,7 @@
+import { promisifyAll } from 'miniprogram-api-promise';
+wx.p = {}
+promisifyAll(wx, wx.p)
+
 // app.js
 App({
   onLaunch() {

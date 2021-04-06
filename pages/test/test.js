@@ -9,6 +9,29 @@ Page({
     msg: 'default',
     arr: ['苹果', '华为', '小米']
   },
+  handleClick() {
+    /* wx.request({
+      url: 'https://www.escook.cn/api/get',
+      method: 'GET',
+      data: {
+        name: 'zs',
+        age: 22
+      },
+      success: (res) => {
+        console.log(res)
+      }
+    }) */
+    wx.p.request({
+      url: 'https://www.escook.cn/api/get',
+      method: 'GET',
+      data: {
+        name: 'zs',
+        age: 22
+      },
+    }).then(r => {
+      console.log(r)
+    })
+  },
 
   btnTapHandler(e) {
     this.setData({
@@ -27,7 +50,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
